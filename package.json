@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/apsaxena24/KnowTheWorldBetter/issues"
   },
-  "homepage": "https://github.com/apsaxena24/KnowTheWorldBetter#readme"
+  "homepage": "https://github.com/apsaxena24/KnowTheWorldBetter#readme",
+  "dependencies": {
+    "body-parser": "^1.4.3",
+    "express": "^4.13.4",
+    "method-override": "^2.1.3",
+    "morgan": "^1.1.1",
+    "mysql": "latest",
+    "request": "latest"
+  }
 }
