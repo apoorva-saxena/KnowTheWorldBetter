@@ -1,1 +1,81 @@
-Know the World better begins
+<!DOCTYPE html>
+<html ng-app="World">
+<head>
+    <!-- <link rel="stylesheet" type="text/css" href="index.css"></link> -->
+    <!-- <script src="angular.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+</head>
+
+<body ng-controller="WorldController">
+	<h2> Know The World Better </h2>
+	<div>
+		<input type="text" ng-model="search_text"/>
+	</div>
+	<div ng-show="search_text">
+	<div ng-repeat="country_data in world_data | filter:search_text | orderBy:'search_text === country_data.name'">	
+		<br>
+		Name : {{country_data.name}}
+		<br>
+		Capital : {{country_data.capital}}
+		<br>
+		Region : {{country_data.region}}
+		<br>
+		Subregion : {{country_data.subregion}}
+		<br>
+		Population : {{country_data.population}}
+		<br>
+		Demonym : {{country_data.demonym}}
+		<br>
+		Area : {{country_data.area}}
+		<br>
+		Gini : {{country_data.gini}}
+		<br>
+		Native Name : {{country_data.nativeName}}
+		<br>
+		Numeric Code : {{country_data.numericCode}}
+		<br>
+		Alpha 2 Code : {{country_data.alpha2Code}}
+		<br>
+		Alpha 3 Code : {{country_data.alpha3Code}}
+		<br>
+		Domains : 
+		<span ng-repeat="domain in country_data.topLevelDomain">
+			{{domain}}
+		</span>
+		<br>
+		Calling Codes : 
+		<span ng-repeat="code in country_data.callingCodes">
+			{{code}}
+		</span>
+		<br>
+		Alternate Spellings : 
+		<span ng-repeat="spell in country_data.altSpellings">
+			{{spell}}
+		</span>
+		<br>
+		Latitude Longitude : 
+		<span ng-repeat="lat in country_data.latlng">
+			{{lat}}
+		</span>
+		<br>
+		Borders : 
+		<span ng-repeat="border in country_data.borders">
+			{{Border}}
+		</span>
+		<br>
+		Currencies : 
+		<span ng-repeat="currency in country_data.currencies">
+			Code : {{currency.code}}
+			Name : {{currency.name}}
+			Symbol : {{currency.symbol}}
+		</span>
+		<br>
+		<img src="{{country_data.flag}}" style="width:100px;height:100px;"/>
+	</div>
+	</div>
+   
+</body>
+
+</html>

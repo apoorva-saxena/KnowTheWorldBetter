@@ -20,7 +20,8 @@ server.use(express.static(__dirname + '/app'));
 server.get('/api/world_data', function(req, res) {
 	async function getWorldData () {
 		const world = await world_data.getWorldData()
-		res.send(world);
+		res.send(world)
+		// res.send(world[0]);
 	}
 	getWorldData()
 })
