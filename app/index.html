@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="World">
 <head>
-    <!-- <link rel="stylesheet" type="text/css" href="index.css"></link> -->
+    <link rel="stylesheet" type="text/css" href="index.css"></link>
     <!-- <script src="angular.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="app.js"></script>
@@ -10,6 +10,9 @@
 
 <body ng-controller="WorldController">
 	<h2> Know The World Better </h2>
+	<br>
+	<br>
+	<h3>Type anything about any of the countries</h3>
 	<div>
 		<input type="text" ng-model="search_text"/>
 	</div>
@@ -73,6 +76,8 @@
 		</span>
 		<br>
 		<img src="{{country_data.flag}}" style="width:100px;height:100px;"/>
+		<br>
+		<br>
 	</div>
 	</div>
    
