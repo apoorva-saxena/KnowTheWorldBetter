@@ -13,3 +13,14 @@ body {
     background-blend-mode: overlay;
     background-repeat: no-repeat;
 }
+
+.move_right {
+	margin-left: 20px;
+}
+
+.beautiful_border:hover {
+	border-style: solid;
+    border-width: 1px;
+    border-color: purple;
+    padding-left: 10px;
+}

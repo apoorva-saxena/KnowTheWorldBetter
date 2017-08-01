@@ -17,7 +17,7 @@
 		<input type="text" ng-model="search_text"/>
 	</div>
 	<div ng-show="search_text">
-	<div ng-repeat="country_data in world_data | filter:search_text | orderBy:'search_text === country_data.name'">	
+	<div ng-repeat="country_data in world_data | filter:search_text | orderBy:'search_text === country_data.name'" class="beautiful_border">	
 		<br>
 		Name : {{country_data.name}}
 		<br>
@@ -70,9 +70,10 @@
 		<br>
 		Currencies : 
 		<span ng-repeat="currency in country_data.currencies">
-			Code : {{currency.code}}
-			Name : {{currency.name}}
-			Symbol : {{currency.symbol}}
+			<div class="move_right">Code : {{currency.code}}</div>
+			<div class="move_right">Name : {{currency.name}}</div>
+			<div class="move_right">Symbol : {{currency.symbol}}</div>
+			<br>
 		</span>
 		<br>
 		<img src="{{country_data.flag}}" style="width:100px;height:100px;"/>
