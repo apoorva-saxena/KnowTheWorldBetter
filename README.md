@@ -1,4 +1,4 @@
-# StudioGhibli
+# Know the World Better
 
 A 'Find anything about any country' using technologies:
 
