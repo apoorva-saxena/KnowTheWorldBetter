@@ -1,6 +1,6 @@
 # StudioGhibli
 
-A small Ghibli site using technologies:
+A 'Find anything about any country' using technologies:
 
 - Node js
 - Express
@@ -8,7 +8,7 @@ A small Ghibli site using technologies:
 - HTML
 - CSS
 
-using the api : https://ghibliapi.herokuapp.com/
+using the api : https://restcountries.eu/rest/v2/
 
 ## Setup
 
